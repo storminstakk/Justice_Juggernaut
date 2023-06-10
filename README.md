@@ -9,13 +9,13 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 一键免费部署你的私人 ChatGPT 网页应用。
 
-[Demo](https://chatgpt.nextweb.fun/) / [Issues](https://github.com/StorminStakk/ChatGPT-Web-Action/issues) / [Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+[Demo](https://chatgpt.nextweb.fun/) / [Issues]( https://github.com/storminstakk/Justice_Juggernaut/issues) / [Buy Me a Coffee](https://www.buymeacoffee.com/storminstakk)
 
-[演示](https://chatgpt.nextweb.fun/) / [反馈](https://github.com/StorminStakk/ChatGPT-Web-Action/issues)/ [QQ 群](https://github.com/StorminStakk/ChatGPT-Web-Action/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
+[演示](https://chatgpt.nextweb.fun/) / [反馈]( https://github.com/storminstakk/Justice_Juggernaut/issues)/ [QQ 群]( https://github.com/storminstakk/Justice_Juggernaut/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-web-action&repository-name=ChatGPT-Web-Action)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStorminStakk%2FJustice_Juggernaut&env=OPENAI_API_KEY&env=CODE&project-name=justice_juggernaut&repository-name=Justice_Juggernaut)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/StorminStakk/ChatGPT-Web-Action)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/StorminStakk/Justice_Juggernaut)
 
 ![cover](./docs/images/cover.png)
 
@@ -35,13 +35,13 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 ## Roadmap
 
-- [x] System Prompt: pin a user defined prompt as system prompt [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
+- [x] System Prompt: pin a user defined prompt as system prompt [#138]( https://github.com/storminstakk/Justice_Juggernaut/issues/138)
 - [x] User Prompt: user can edit and save custom prompts to prompt list
-- [x] Prompt Template: create a new chat with pre-defined in-context prompts [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
-- [x] Share as image, share to ShareGPT [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
+- [x] Prompt Template: create a new chat with pre-defined in-context prompts [#993]( https://github.com/storminstakk/Justice_Juggernaut/issues/993)
+- [x] Share as image, share to ShareGPT [#1741]( https://github.com/storminstakk/Justice_Juggernaut/pull/1741)
 - [ ] Desktop App with tauri
 - [ ] Self-host Model: support llama, alpaca, ChatGLM, BELLE etc.
-- [ ] Plugins: support network search, calculator, any other apis etc. [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165)
+- [ ] Plugins: support network search, calculator, any other apis etc. [#165]( https://github.com/storminstakk/Justice_Juggernaut/issues/165)
 
 ### Not in Plan
 
@@ -68,13 +68,13 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 ## 开发计划
 
-- [x] 为每个对话设置系统 Prompt [#138](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)
+- [x] 为每个对话设置系统 Prompt [#138]( https://github.com/storminstakk/Justice_Juggernaut/issues/138)
 - [x] 允许用户自行编辑内置 Prompt 列表
-- [x] 预制角色：使用预制角色快速定制新对话 [#993](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/993)
-- [x] 分享为图片，分享到 ShareGPT 链接 [#1741](https://github.com/Yidadaa/ChatGPT-Next-Web/pull/1741)
+- [x] 预制角色：使用预制角色快速定制新对话 [#993]( https://github.com/storminstakk/Justice_Juggernaut/issues/993)
+- [x] 分享为图片，分享到 ShareGPT 链接 [#1741]( https://github.com/storminstakk/Justice_Juggernaut/pull/1741)
 - [ ] 使用 tauri 打包桌面应用
 - [ ] 支持自部署的大语言模型
-- [ ] 插件机制，支持联网搜索、计算器、调用其他平台 api [#165](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/165)
+- [ ] 插件机制，支持联网搜索、计算器、调用其他平台 api [#165]( https://github.com/storminstakk/Justice_Juggernaut/issues/165)
 
 ### 不会开发的功能
 
@@ -83,7 +83,7 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 ## 最新动态
 
-- 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ 了解更多： [ChatGPT 提示词高阶技能：零次、一次和少样本提示](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/138)。
+- 🚀 v2.0 已经发布，现在你可以使用面具功能快速创建预制对话了！ 了解更多： [ChatGPT 提示词高阶技能：零次、一次和少样本提示]( https://github.com/storminstakk/Justice_Juggernaut/issues/138)。
 - 💡 想要更方便地随时随地使用本项目？可以试下这款桌面插件：https://github.com/mushan0x0/AI0x0.com
 - 🚀 v2.7 现在可以将会话分享为图片了，也可以分享到 ShareGPT 的在线链接。
 
@@ -93,7 +93,7 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
 
 1. Get [OpenAI API Key](https://platform.openai.com/account/api-keys);
 2. Click
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStorminStakk%2FChatGPT-Web-Action&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Web-Action), remember that `CODE` is your page password;
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStorminStakk%2FJustice_Juggernaut&env=OPENAI_API_KEY&env=CODE&project-name=justice_juggernaut&repository-name=Justice_Juggernaut), remember that `CODE` is your page password;
 3. Enjoy :)
 
 ## FAQ
@@ -182,7 +182,7 @@ If you do not want users to use GPT-4, set this value to 1.
 
 > [简体中文 > 如何进行二次开发](./README_CN.md#开发)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/# https://github.com/storminstakk/Justice_Juggernaut)
 
 Before starting development, you must create a new `.env.local` file at project root, and place your api key into it:
 
@@ -207,12 +207,12 @@ yarn dev
 ### Docker (Recommended)
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull storminstakk/justice_juggernaut
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY="sk-xxxx" \
    -e CODE="your-password" \
-   yidadaa/chatgpt-next-web
+    storminstakk/justice_juggernaut
 ```
 
 You can start service behind a proxy:
@@ -222,13 +222,13 @@ docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY="sk-xxxx" \
    -e CODE="your-password" \
    -e PROXY_URL="http://localhost:7890" \
-   yidadaa/chatgpt-next-web
+    storminstakk/justice_juggernaut
 ```
 
 ### Shell
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/storminstakk/justice_juggernaut/main/scripts/setup.sh)
 ```
 
 ## Screenshots
@@ -239,7 +239,7 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ## Donation
 
-[Buy Me a Coffee](https://www.buymeacoffee.com/yidadaa)
+[Buy Me a Coffee](https://www.buymeacoffee.com/storminstakk)
 
 ## Special Thanks
 
@@ -271,7 +271,7 @@ bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/s
 
 ### Contributor
 
-[Contributors](https://github.com/Yidadaa/ChatGPT-Next-Web/graphs/contributors)
+[Contributors](https://github.com/storminstakk/justice_juggernaut/graphs/contributors)
 
 ## LICENSE
 
