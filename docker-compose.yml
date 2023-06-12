@@ -1,9 +1,9 @@
 version: '3.9'
 services:
-  chatgpt-next-web: 
+  justice_juggernaut: 
     profiles: ["no-proxy"]
-    container_name: chatgpt-next-web
-    image: yidadaa/chatgpt-next-web
+    container_name: justice_juggernaut
+    image: storminstakk/justice_juggernaut
     ports:
       - 3000:3000
     environment:
@@ -14,10 +14,10 @@ services:
       - HIDE_USER_API_KEY=$HIDE_USER_API_KEY
       - DISABLE_GPT4=DISABLE_GPT4
 
-  chatgpt-next-web-proxy: 
+  justice_juggernaut-proxy: 
     profiles: ["proxy"]
-    container_name: chatgpt-next-web-proxy
-    image: yidadaa/chatgpt-next-web
+    container_name: justice_juggernaut-proxy
+    image: storminstakk/justice_juggernaut
     ports:
       - 3000:3000
     environment:

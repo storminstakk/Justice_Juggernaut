@@ -9,7 +9,7 @@
 3. 选择 Project。
 
 ![vercel-create-2](./images/vercel/vercel-create-2.jpg)
-1. 在 Import Git Repository 处，搜索 chatgpt-next-web；
+1. 在 Import Git Repository 处，搜索 justice_juggernaut；
 2. 选中新 fork 的项目，点击 Import。
 
 ![vercel-create-3](./images/vercel/vercel-create-3.jpg)
