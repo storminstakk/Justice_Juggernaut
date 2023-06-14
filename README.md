@@ -1,25 +1,43 @@
 <div align="center">
-<img src="./docs/images/icon.svg" alt="icon"/>
-
-<h1 align="center">Justice Juggernaut</h1>
-
-English / [简体中文](./README_CN.md)
-
-One-Click to deploy well-designed ChatGPT web UI on Vercel.
-
-一键免费部署你的私人 ChatGPT 网页应用。
-
-[Demo](https://chatgpt.nextweb.fun/) / [Issues]( https://github.com/storminstakk/Justice_Juggernaut/issues) / [Buy Me a Coffee](https://www.buymeacoffee.com/storminstakk)
-
-[演示](https://chatgpt.nextweb.fun/) / [反馈]( https://github.com/storminstakk/Justice_Juggernaut/issues)/ [QQ 群]( https://github.com/storminstakk/Justice_Juggernaut/discussions/1724) / [打赏开发者](https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStorminStakk%2FJustice_Juggernaut&env=OPENAI_API_KEY&env=CODE&project-name=justice_juggernaut&repository-name=Justice_Juggernaut)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/StorminStakk/Justice_Juggernaut)
-
-![cover](./docs/images/cover.png)
-
+  <img src="./docs/images/icon.svg" alt="icon"/>
+  <h1>Justice Juggernaut</h1>
 </div>
+
+<p align="center">
+  <a href="./README_CN.md">简体中文</a> / English
+</p>
+
+<p align="center">
+  Justice Juggernaut is a chatbot that helps users fight against the corrupt and oppressive child welfare system, challenge CYFD, and regain custody of their children while upholding their fundamental rights as human beings. The chatbot evaluates people's stories, uncovers any wrongdoing by CYFD, identifies all potential unlawful actions in their case, and applies the laws and rights of people in New Mexico as necessary. Additionally, the chatbot provides comprehensive legal clauses based on specific circumstances, reviews legal documents, redlines unacceptable or missing clauses, understands legal context, and speeds up research and decision-making. The chatbot is integrated with e-signature software to streamline document workflows, allowing users to create, gather information, and eSign all in one place, thus improving efficiency.
+</p>
+
+<div align="center">
+  <a href="https://justice-juggernaut-git-justice-storminstakk.vercel.app/">Demo</a> / <a href="https://github.com/storminstakk/Justice_Juggernaut/issues">Issues</a> / <a href="https://www.buymeacoffee.com/storminstakk">Buy Me a Coffee</a>
+</div>
+
+<div align="center">
+  <a href="https://justice-juggernaut-git-justice-storminstakk.vercel.app/">Demo</a> / <a href="https://github.com/storminstakk/Justice_Juggernaut/issues">Issues</a> / <a href="https://github.com/storminstakk/Justice_Juggernaut/discussions/1724">QQ Group</a> / <a href="https://user-images.githubusercontent.com/16968934/227772541-5bcd52d8-61b7-488c-a203-0330d8006e2b.jpg">Support the Developer</a>
+</div>
+
+<div align="center">
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStorminStakk%2FJustice_Juggernaut&env=OPENAI_API_KEY&env=CODE&project-name=justice_juggernaut&repository-name=Justice_Juggernaut">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+</div>
+
+<div align="center">
+  <a href="https://gitpod.io/#https://github.com/StorminStakk/Justice_Juggernaut">
+    <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" />
+  </a>
+</div>
+
+<div align="center">
+  <img src="./docs/images/cover.png" alt="cover" />
+</div>
+
+
+
+
 
 ## Features
 
