@@ -1,4 +1,11 @@
+import React from "react";
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { IconButton } from "your-icon-library"; // Replace with your actual icon library
+import { SettingsIcon, GithubIcon } from "your-icon-library"; // Replace with your actual icons
+import styles from "./Sidebar.module.css"; // Replace with your actual CSS module
+
+const REPO_URL = "https://github.com/storminstakk/justice_juggernaut"; // Replace with your actual repository URL
 
 import styles from "./home.module.scss";
 
@@ -168,16 +175,19 @@ export function SideBar(props: { className?: string }) {
               }}
             />
           </div>
-          <div className={styles["sidebar-action"]}>
-            <Link to={Path.Settings}>
-              <IconButton icon={<SettingsIcon />} shadow />
-            </Link>
-          </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
-          </div>
+          const Sidebar = () => {
+  return (
+    <div className={styles["sidebar"]}>
+      <div className={styles["sidebar-action"]}>
+        <Link to={Path.Settings} rel="noopener noreferrer">
+          <IconButton icon={<SettingsIcon />} shadow />
+        </Link>
+      </div>
+      <div className={styles["sidebar-action"]}>
+        <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+          <IconButton icon={<GithubIcon />} shadow />
+        </a>
+      </div>
         </div>
         <div>
           <IconButton
