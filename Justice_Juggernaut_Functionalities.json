@@ -340,8 +340,73 @@
         "Prepare persuasive legal briefs and memoranda to support legal arguments.",
         "Communicate complex legal concepts in a clear and understandable manner to clients.",
         "Craft compelling opening and closing statements for trial advocacy."
+  ]
+    },
+    {
+      "name": "Investigate Wrongdoing by CYFD",
+      "description": "This functionality evaluates people's stories and uncovers any potential wrongdoing by the Children, Youth and Families Department (CYFD). It aims to identify instances of misconduct or unlawful actions in a user's case, particularly in relation to child welfare issues. By examining the facts and applying relevant laws, it assists users in seeking justice and holding the responsible parties accountable.",
+      "keywords": ["CYFD investigation", "wrongdoing evaluation", "unlawful actions", "child welfare issues"],
+      "usage_examples": [
+        "Evaluate my case and determine if CYFD has violated any laws or regulations.",
+        "Identify any instances of misconduct or wrongdoing by CYFD in my child's welfare case.",
+        "Assist me in gathering evidence to support allegations of wrongdoing by CYFD.",
+        "Provide guidance on legal remedies available for addressing CYFD's misconduct."
+      ]
+    },
+    {
+      "name": "Legal Document Review and Clauses",
+      "description": "This functionality reviews legal documents, such as contracts, agreements, or legal forms, and provides a comprehensive analysis. It identifies unacceptable or missing clauses and suggests appropriate revisions or additions based on specific circumstances. By ensuring the accuracy and completeness of legal documents, it helps users avoid potential pitfalls and legal disputes.",
+      "keywords": ["document review", "clause analysis", "contract evaluation", "legal form review"],
+      "usage_examples": [
+        "Review my rental agreement and suggest any necessary changes or additions.",
+        "Identify missing clauses in my employment contract and provide suggestions.",
+        "Evaluate the legal terms in my business partnership agreement and suggest improvements.",
+        "Review my will and ensure all necessary clauses are included for proper estate planning."
+      ]
+    },
+    {
+      "name": "Legal Research and Decision Support",
+      "description": "This functionality leverages its understanding of legal context and extensive knowledge base to expedite legal research and decision-making. It can quickly retrieve relevant legal information, statutes, case precedents, and regulations, providing users with valuable insights and supporting them in making informed legal decisions. By streamlining the research process, it saves time and enhances efficiency.",
+      "keywords": ["legal research", "decision support", "legal information retrieval", "case precedents"],
+      "usage_examples": [
+        "Provide me with the latest case precedents on employment discrimination in New Mexico.",
+        "Research the relevant statutes and regulations regarding intellectual property rights.",
+        "Assist me in understanding the legal implications of a recent Supreme Court ruling.",
+        "Help me analyze the potential legal risks and benefits of a business expansion."
+      ]
+    },
+    {
+      "name": "Integrated e-Signature and Document Workflow",
+      "description": "This functionality integrates with e-signature software to streamline document workflows. Users can create, gather information, review, and electronically sign documents all in one place, improving efficiency and reducing paperwork. By eliminating the need for physical signatures and manual document handling, it simplifies processes and enhances convenience for both individuals and organizations.",
+      "keywords": ["e-signature integration", "document workflow", "electronic document signing", "paperless processes"],
+      "usage_examples": [
+        "Create a new client contract, gather the necessary information, and obtain electronic signatures.",
+        "Streamline the approval process for legal documents by integrating with e-signature software.",
+        "Review and digitally sign legal forms and agreements without the need for printing and scanning.",
+        "Automate document routing and notifications to ensure smooth workflows and timely sign-offs."
+      ]
+    },
+    {
+      "name": "Language Processing and Grammar Check",
+      "description": "This functionality employs advanced language processing capabilities to ensure correct grammar and consistency in legal documents and communications. It automatically identifies and corrects grammar errors, suggests improvements for clarity and readability, and maintains consistency in style and terminology. By enhancing the quality of written materials, it helps convey legal information accurately and professionally.",
+      "keywords": ["language processing", "grammar check", "clarity improvement", "consistency enforcement"],
+      "usage_examples": [
+        "Proofread my legal brief and correct any grammar or spelling mistakes.",
+        "Suggest improvements to the clarity and readability of my legal memorandum.",
+        "Ensure consistency in terminology and writing style throughout my contract.",
+        "Review my client communication and suggest enhancements to convey legal concepts more effectively."
+      ]
+    },
+    {
+      "name": "Dynamic Clause Management",
+      "description": "This functionality automatically adds or removes specific clauses based on client information and context. It customizes legal documents to meet individual needs and requirements, eliminating the need for manual editing and customization. By dynamically adjusting clauses, it ensures that legal documents accurately reflect the unique circumstances of each user, saving time and reducing errors.",
+      "keywords": ["dynamic clause management", "customized clauses", "contextual adjustments", "automated customization"],
+      "usage_examples": [
+        "Generate a rental agreement with clauses tailored to the specific property and lease terms.",
+        "Create a sales contract with clauses that reflect the negotiated terms and conditions.",
+        "Automatically adjust clauses in a will based on the client's family situation and asset distribution preferences.",
+        "Customize employment agreements with clauses specific to each employee's role and responsibilities."
       ]
     }
   ]
 }
-		
