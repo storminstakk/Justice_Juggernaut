@@ -54,6 +54,294 @@
         "Where can I find the regulations related to environmental protection?",
         "What are the legal resources for property law in Albuquerque?"
       ]
+    },
+    {
+      "name": "Legal Document Generation",
+      "description": "Automates the generation of legal documents based on user input.",
+      "keywords": ["legal document generation", "automated document creation", "document drafting"],
+      "usage_examples": [
+        "Generate a simple will document based on my preferences.",
+        "Create a rental agreement for a residential property.",
+        "Draft a non-disclosure agreement for a business partnership.",
+        "Generate a power of attorney document for healthcare decisions."
+      ]
+    },
+    {
+      "name": "Contract Review and Analysis",
+      "description": "Reviews and analyzes contracts to identify important clauses, potential risks, and conflicting terms.",
+      "keywords": ["contract review", "contract analysis", "clause identification", "risk assessment"],
+      "usage_examples": [
+        "Review a commercial lease agreement and highlight any unfavorable terms.",
+        "Analyze a software licensing agreement for potential legal risks.",
+        "Identify and explain the indemnification clause in a construction contract.",
+        "Review a service agreement to identify any conflicting provisions."
+      ]
+    },
+    {
+      "name": "Legal Rights and Obligations",
+      "description": "Provides advice on legal rights and obligations in various contexts.",
+      "keywords": ["legal rights", "legal obligations", "rights and responsibilities", "legal advice"],
+      "usage_examples": [
+        "What are my rights as a tenant in a rental property?",
+        "What are the legal obligations of employers regarding workplace safety?",
+        "Explain the rights and responsibilities of landlords and tenants.",
+        "What are the legal rights of consumers when making online purchases?"
+      ]
+    },
+    {
+      "name": "Legal Process Guidance",
+      "description": "Guides users through the legal process, providing step-by-step instructions and clarifying requirements.",
+      "keywords": ["legal process guidance", "step-by-step instructions", "process clarification", "legal assistance"],
+      "usage_examples": [
+        "Guide me through the process of starting a small business.",
+        "Explain the steps involved in applying for a patent.",
+        "Clarify the requirements for obtaining a marriage license.",
+        "Provide instructions on how to change my legal name."
+      ]
+    },
+    {
+      "name": "Legal Research and Analysis",
+      "description": "Conducts in-depth research and analysis on complex legal issues, providing comprehensive information and insights.",
+      "keywords": ["legal research", "legal analysis", "legal insights", "comprehensive information"],
+      "usage_examples": [
+        "Conduct research on the legality of cryptocurrency in various countries.",
+        "Analyze the legal implications of artificial intelligence in healthcare.",
+        "Provide comprehensive information on the legal requirements for starting an e-commerce business.",
+        "Research the legal standards for proving medical malpractice."
+      ]
+    },
+    {
+      "name": "Courtroom Advocacy",
+      "description": "Simulates courtroom advocacy by presenting arguments, legal analysis, and counterarguments in a mock court setting.",
+      "keywords": ["courtroom advocacy", "legal arguments", "legal analysis", "counterarguments"],
+      "usage_examples": [
+        "Present arguments and legal analysis for the prosecution in a criminal case.",
+        "Defend a client in a civil litigation case by presenting counterarguments.",
+        "Simulate a cross-examination of a witness in a mock trial.",
+        "Prepare and deliver a closing statement in a fictional court case."
+   ]
+    },
+    {
+      
+      "name": "Legal Document Drafting",
+      "description": "Assists in the directed drafting of legal documents, providing templates and guidance.",
+      "keywords": ["legal document drafting", "document templates", "document guidance", "legal drafting"],
+      "usage_examples": [
+        "Draft a demand letter for a personal injury claim.",
+        "Create a partnership agreement for a new business venture.",
+        "Prepare a will that complies with state laws.",
+        "Draft a residential lease agreement for a landlord."
+      ]
+    },
+    {
+      "name": "Contract Review and Negotiation",
+      "description": "Reviews contracts, identifies problematic terms, and provides guidance for negotiation.",
+      "keywords": ["contract review", "contract negotiation", "problematic terms", "negotiation guidance"],
+      "usage_examples": [
+        "Review a vendor contract and suggest modifications for better terms.",
+        "Provide guidance on negotiating a favorable employment contract.",
+        "Identify potential risks in a licensing agreement and propose amendments.",
+        "Assist in negotiating a lease agreement for commercial property."
+      ]
+    },
+    {
+      "name": "Legal Document Analysis",
+      "description": "Analyzes legal documents for accuracy, completeness, and potential issues.",
+      "keywords": ["document analysis", "legal document review", "accuracy assessment", "issue identification"],
+      "usage_examples": [
+        "Review a confidentiality agreement to ensure all necessary provisions are included.",
+        "Analyze a purchase agreement for any hidden clauses or unfavorable terms.",
+        "Assess the compliance of a contract with relevant legal requirements.",
+        "Review a will document for any potential ambiguity or contradictory statements."
+      ]
+    },
+    {
+      "name": "Legal Citations Generation",
+      "description": "Generates citations and references based on user input and legal citation formats.",
+      "keywords": ["citations generation", "legal references", "citation formats", "legal citation"],
+      "usage_examples": [
+        "Generate a citation for a Supreme Court case in APA format.",
+        "Provide a reference for a statute from the U.S. Code in Bluebook format.",
+        "Create a citation for a law review article in MLA format.",
+        "Generate a citation for a court opinion in Chicago Manual of Style format."
+      ]
+    },
+    {
+      "name": "Legal Database Access",
+      "description": "Provides access to extensive legal databases for research, case law, statutes, and regulations.",
+      "keywords": ["legal database", "legal research", "case law", "statutes", "regulations"],
+      "usage_examples": [
+        "Search for relevant case law on employment discrimination in federal courts.",
+        "Access state statutes regarding real estate transactions in California.",
+        "Research regulations on data privacy in the European Union.",
+        "Find court opinions related to intellectual property disputes."
+      ]
+    },
+    {
+	  "name": "Legal Representation",
+      "description": "Represents clients in legal proceedings and advocates for their interests.",
+      "keywords": ["legal representation", "client advocacy", "court representation", "advocate"],
+      "usage_examples": [
+        "Provide representation in a personal injury lawsuit.",
+        "Advocate for a client in a child custody hearing.",
+        "Represent a defendant in a criminal trial.",
+        "Provide legal counsel and representation in a business dispute."
+      ]
+    },
+    {
+      "name": "Legal Opinion and Advice",
+      "description": "Offers legal opinions and advice based on analysis of legal issues and applicable laws.",
+      "keywords": ["legal opinions", "legal advice", "legal analysis", "legal guidance"],
+      "usage_examples": [
+        "Provide an opinion on the potential liability in a negligence case.",
+        "Offer advice on the legal options for debt relief.",
+        "Assess the legality of a proposed business practice.",
+        "Provide guidance on the legal consequences of a contract breach."
+      ]
+    },
+    {
+      "name": "Alternative Dispute Resolution",
+      "description": "Assists in resolving legal disputes outside of traditional court proceedings.",
+      "keywords": ["alternative dispute resolution", "mediation", "arbitration", "negotiation"],
+      "usage_examples": [
+        "Mediate a family law dispute to reach a mutually agreeable solution.",
+        "Facilitate negotiations between parties in a contract dispute.",
+        "Provide arbitration services to resolve a commercial disagreement.",
+        "Assist in negotiating a settlement in a personal injury case."
+      ]
+    },
+    {
+      "name": "Legal Ethics and Professional Responsibility",
+      "description": "Adheres to legal ethics and professional standards in all legal interactions.",
+      "keywords": ["legal ethics", "professional responsibility", "ethical standards", "professional conduct"],
+      "usage_examples": [
+        "Ensure confidentiality and attorney-client privilege in all legal communications.",
+        "Uphold the duty of loyalty and avoid conflicts of interest.",
+        "Maintain professionalism and integrity in legal proceedings.",
+        "Comply with ethical rules and regulations governing legal practice."
+      ]
+    },
+    {
+      "name": "Access to Justice",
+      "description": "Promotes access to justice and equal treatment under the law for all individuals.",
+      "keywords": ["access to justice", "equal treatment", "legal rights", "fairness"],
+      "usage_examples": [
+        "Advocate for the rights of marginalized communities in legal proceedings.",
+        "Provide legal assistance to individuals who cannot afford traditional legal representation.",
+        "Promote awareness of legal rights and resources available to underserved populations.",
+        "Support initiatives that improve access to justice and reduce barriers in the legal system."		
+		  ]
+    },
+    {
+      "name": "Legal Document Drafting",
+      "description": "Assists in the drafting and preparation of legal documents.",
+      "keywords": ["document drafting", "legal documents", "legal drafting", "document preparation"],
+      "usage_examples": [
+        "Draft a will that reflects the client's wishes and complies with legal requirements.",
+        "Prepare a contract that outlines the terms and conditions of a business agreement.",
+        "Assist in drafting a legal brief to support a legal argument in court.",
+        "Create a power of attorney document to delegate decision-making authority."
+      ]
+    },
+    {
+      "name": "Legal Due Diligence",
+      "description": "Conducts thorough legal due diligence to identify risks and legal implications.",
+      "keywords": ["due diligence", "legal risks", "legal implications", "risk assessment"],
+      "usage_examples": [
+        "Perform due diligence in a corporate merger to identify potential legal issues.",
+        "Conduct a legal review of contracts to assess compliance and mitigate risks.",
+        "Assist in due diligence for real estate transactions to uncover any legal encumbrances.",
+        "Evaluate the legal implications of a proposed business expansion."
+      ]
+    },
+    {
+      "name": "Legal Compliance",
+      "description": "Provides guidance on legal compliance and ensures adherence to applicable laws and regulations.",
+      "keywords": ["legal compliance", "compliance guidance", "regulatory compliance", "law adherence"],
+      "usage_examples": [
+        "Advise on compliance with data protection laws and regulations.",
+        "Ensure compliance with labor laws in employee management practices.",
+        "Guide businesses in adhering to environmental regulations.",
+        "Assist in compliance with financial and securities laws in investment activities."
+      ]
+    },
+    {
+      "name": "Legal Education and Training",
+      "description": "Offers legal education and training programs to enhance legal knowledge and skills.",
+      "keywords": ["legal education", "legal training", "professional development", "legal knowledge"],
+      "usage_examples": [
+        "Provide training on intellectual property rights and infringement issues.",
+        "Deliver workshops on contract law for business professionals.",
+        "Offer continuing legal education courses for practicing attorneys.",
+        "Conduct seminars on employment law rights and obligations."
+      ]
+    },
+    {
+      "name": "Legal Technology Solutions",
+      "description": "Utilizes technology solutions to streamline legal processes and improve efficiency.",
+      "keywords": ["legal technology", "legal software", "technology solutions", "process automation"],
+      "usage_examples": [
+        "Implement a case management software to organize and track case information.",
+        "Utilize e-discovery tools for efficient document review in litigation cases.",
+        "Integrate contract management software to streamline contract drafting and management.",
+        "Apply artificial intelligence solutions to analyze legal data and identify patterns."
+     		  ]
+    },
+    {
+      "name": "Legal Dispute Resolution",
+      "description": "Assists in resolving legal disputes through negotiation, mediation, or arbitration.",
+      "keywords": ["dispute resolution", "conflict resolution", "mediation", "arbitration"],
+      "usage_examples": [
+        "Facilitate negotiations between parties to reach a settlement in a contract dispute.",
+        "Mediate a family law case to help parties reach a mutually acceptable resolution.",
+        "Provide guidance on arbitration procedures and represent clients in arbitration hearings.",
+        "Assist in alternative dispute resolution methods to avoid lengthy litigation."
+      ]
+    },
+    {
+      "name": "Legal Ethics and Professional Responsibility",
+      "description": "Provides guidance on ethical obligations and professional conduct in the legal field.",
+      "keywords": ["legal ethics", "professional responsibility", "ethical obligations", "professional conduct"],
+      "usage_examples": [
+        "Advise attorneys on conflicts of interest and maintaining client confidentiality.",
+        "Provide guidance on the duty of competence and diligent representation.",
+        "Offer insights on the attorney-client privilege and its limitations.",
+        "Assist in navigating ethical dilemmas and making ethical decisions."
+      ]
+    },
+    {
+      "name": "Legal Risk Management",
+      "description": "Identifies and manages legal risks to minimize potential legal liabilities.",
+      "keywords": ["risk management", "legal risk", "liability management", "risk mitigation"],
+      "usage_examples": [
+        "Conduct risk assessments to identify potential legal vulnerabilities in a business operation.",
+        "Develop strategies to mitigate legal risks associated with new product launches.",
+        "Provide guidance on compliance with consumer protection laws to avoid legal disputes.",
+        "Assist in developing policies and procedures to minimize legal exposure."
+      ]
+    },
+    {
+      "name": "Legal Advocacy",
+      "description": "Advocates for clients' rights and interests in legal proceedings and negotiations.",
+      "keywords": ["legal advocacy", "client representation", "rights protection", "advocacy skills"],
+      "usage_examples": [
+        "Represent clients in court hearings and present their case before a judge.",
+        "Advocate for the best interests of children in child custody disputes.",
+        "Negotiate on behalf of clients to secure favorable settlements in personal injury cases.",
+        "Protect clients' rights and fight for justice in criminal defense matters."
+      ]
+    },
+    {
+      "name": "Legal Writing and Communication",
+      "description": "Delivers effective legal writing and communication for various purposes and audiences.",
+      "keywords": ["legal writing", "legal communication", "legal drafting", "effective communication"],
+      "usage_examples": [
+        "Draft clear and concise legal contracts that accurately reflect the parties' intentions.",
+        "Prepare persuasive legal briefs and memoranda to support legal arguments.",
+        "Communicate complex legal concepts in a clear and understandable manner to clients.",
+        "Craft compelling opening and closing statements for trial advocacy."
+      ]
     }
   ]
 }
+		
