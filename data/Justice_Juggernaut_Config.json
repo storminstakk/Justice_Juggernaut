@@ -1139,126 +1139,126 @@
             },
             "Library_of_Congress": {
               "name": "Library of Congress",
-              "url": "https://www.loc.gov/"
-            },
-            "Advanced_Sources": [
-              {
-                "name": "Westlaw",
-                "url": "https://legal.thomsonreuters.com/en/products/westlaw"
-              },
-              {
-                "name": "LexisNexis",
-                "url": "https://www.lexisnexis.com/"
-              },
-              {
-                "name": "Bloomberg Law",
-                "url": "https://www.bloomberglaw.com/"
-              },
-              {
-                "name": "HeinOnline",
-                "url": "https://home.heinonline.org/"
-              },
-              {
-                "name": "Fastcase",
-                "url": "https://www.fastcase.com/"
-              },
-              {
-                "name": "Google Scholar",
-                "url": "https://scholar.google.com/"
-              },
-              {
-                "name": "PACER",
-                "url": "https://www.pacer.gov/"
-              },
-              {
-                "name": "Cornell Legal Information Institute",
-                "url": "https://www.law.cornell.edu/"
-              },
-              {
-                "name": "FindLaw",
-                "url": "https://www.findlaw.com/"
-              },
-              {
-                "name": "California Legislative Counsel Bureau",
-                "url": "https://leginfo.legislature.ca.gov/"
-              },
-              {
-                "name": "United States Code",
-                "url": "https://uscode.house.gov/"
-              },
-              {
-                "name": "Code of Federal Regulations",
-                "url": "https://www.ecfr.gov/"
-              },
-              {
-                "name": "Supreme Court of the United States",
-                "url": "https://www.supremecourt.gov/"
-              },
-              {
-                "name": "Library of Congress",
-                "url": "https://www.loc.gov/"
-              },
-              {
-                "name": "Federal Register",
-                "url": "https://www.federalregister.gov/"
-              },
-              {
-                "name": "Congress.gov",
-                "url": "https://www.congress.gov/"
-              },
-              {
-                "name": "California Courts",
-                "url": "https://www.courts.ca.gov/"
-              },
-              {
-                "name": "California Law Revision Commission",
-                "url": "https://clrc.ca.gov/"
-              },
-              {
-                "name": "California State Bar",
-                "url": "https://www.calbar.ca.gov/"
+              "url": "https://www.loc.gov/",
+                "Advanced_Sources": [
+                  {
+              "name": "Westlaw",
+              "url": "https://legal.thomsonreuters.com/en/products/westlaw"
+                  },
+                  {
+              "name": "LexisNexis",
+              "url": "https://www.lexisnexis.com/"
+                  },
+                  {
+              "name": "Bloomberg Law",
+              "url": "https://www.bloomberglaw.com/"
+                  },
+                  {
+                    "name": "HeinOnline",
+                    "url": "https://home.heinonline.org/"
+                  },
+                  {
+                    "name": "Fastcase",
+                    "url": "https://www.fastcase.com/"
+                  },
+                  {
+                    "name": "Google Scholar",
+                    "url": "https://scholar.google.com/"
+                  },
+                  {
+                    "name": "PACER",
+                    "url": "https://www.pacer.gov/"
+                  },
+                  {
+                    "name": "Cornell Legal Information Institute",
+                    "url": "https://www.law.cornell.edu/"
+                  },
+                  {
+                    "name": "FindLaw",
+                    "url": "https://www.findlaw.com/"
+                  },
+                  {
+                    "name": "California Legislative Counsel Bureau",
+                    "url": "https://leginfo.legislature.ca.gov/"
+                  },
+                  {
+                    "name": "United States Code",
+                    "url": "https://uscode.house.gov/"
+                  },
+                  {
+                    "name": "Code of Federal Regulations",
+                    "url": "https://www.ecfr.gov/"
+                  },
+                  {
+                    "name": "Supreme Court of the United States",
+                    "url": "https://www.supremecourt.gov/"
+                  },
+                  {
+                    "name": "Library of Congress",
+                    "url": "https://www.loc.gov/"
+                  },
+                  {
+                    "name": "Federal Register",
+                    "url": "https://www.federalregister.gov/"
+                  },
+                  {
+                    "name": "Congress.gov",
+                    "url": "https://www.congress.gov/"
+                  },
+                  {
+                    "name": "California Courts",
+                    "url": "https://www.courts.ca.gov/"
+                  },
+                  {
+                    "name": "California Law Revision Commission",
+                    "url": "https://clrc.ca.gov/"
+                  },
+                  {
+                    "name": "California State Bar",
+                    "url": "https://www.calbar.ca.gov/"
+                  }
+                ],
+                "American_Law_Institute": {
+                    "name": "American Law Institute",
+                    "url": "https://www.ali.org/"
+                },
+                "Legal_Information_Institute": {
+                    "name": "Legal Information Institute",
+                    "url": "https://www.law.cornell.edu/"
+                },
+                "Other_Sources": [
+                  {
+                    "name": "Public Library of Law",
+                    "url": "https://www.plol.org/"
+                  },
+                  {
+                    "name": "Justia",
+                    "url": "https://www.justia.com/"
+                  },
+                  {
+                    "name": "National Conference of State Legislatures",
+                    "url": "https://www.ncsl.org/"
+                  },
+                  {
+                    "name": "National Center for State Courts",
+                    "url": "https://www.ncsc.org/"
+                  },
+                  {
+                    "name": "American Civil Liberties Union",
+                    "url": "https://www.aclu.org/"
+                  },
+                  {
+                    "name": "Federal Judicial Center",
+                    "url": "https://www.fjc.gov/"
+                  },
+                  {
+                    "name": "National Archives and Records Administration",
+                    "url": "https://www.archives.gov/"
+                  },
+                  {
+                    "name": "United Nations Legal Research",
+                    "url": "https://www.un.org/law/"
+                  }
+                ]
               }
-            ],
-                "name": "American Law Institute",
-                "url": "https://www.ali.org/"
-              }
-            ],
-                "name": "Legal Information Institute",
-                "url": "https://www.law.cornell.edu/"
-              },
-              [
-              ]
-                "name": "Public Library of Law",
-                "url": "https://www.plol.org/"
-              },
-              {
-                "name": "Justia",
-                "url": "https://www.justia.com/"
-              },
-              {
-                "name": "National Conference of State Legislatures",
-                "url": "https://www.ncsl.org/"
-              },
-              {
-                "name": "National Center for State Courts",
-                "url": "https://www.ncsc.org/"
-              },
-              {
-                "name": "American Civil Liberties Union",
-                "url": "https://www.aclu.org/"
-              },
-              {
-                "name": "Federal Judicial Center",
-                "url": "https://www.fjc.gov/"
-              },
-              {
-                "name": "National Archives and Records Administration",
-                "url": "https://www.archives.gov/"
-              },
-              {
-                "name": "United Nations Legal Research",
-                "url": "https://www.un.org/law/"
-              }
-            ]
-          }
-        }
+            }
