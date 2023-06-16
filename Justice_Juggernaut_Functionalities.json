@@ -1,0 +1,59 @@
+{
+  "functionalities": [
+    {
+      "name": "Legal Assistance",
+      "description": "Provides legal assistance and advice on various legal matters.",
+      "keywords": ["legal advice", "legal assistance", "legal consultation", "legal guidance"],
+      "usage_examples": [
+        "What are my rights in a child custody case?",
+        "How can I terminate parental rights?",
+        "What are the steps to file for divorce?",
+        "Can you explain property laws related to inheritance?"
+      ]
+    },
+    {
+      "name": "Case Research",
+      "description": "Performs research on legal cases and provides relevant information and precedents.",
+      "keywords": ["case research", "legal precedents", "case information", "legal research"],
+      "usage_examples": [
+        "What are the landmark Supreme Court cases on freedom of speech?",
+        "Find appellate court decisions on child custody disputes.",
+        "Provide information on notable criminal law cases in New Mexico.",
+        "What are the key rulings in property law cases?"
+      ]
+    },
+    {
+      "name": "Legal Definitions",
+      "description": "Provides definitions and explanations of legal terms and concepts.",
+      "keywords": ["legal definitions", "legal terms", "legal concepts", "legal explanations"],
+      "usage_examples": [
+        "What is the definition of jurisdiction?",
+        "Explain the concept of tort law.",
+        "What does 'beyond a reasonable doubt' mean in criminal law?",
+        "Can you clarify the principle of 'stare decisis'?"
+      ]
+    },
+    {
+      "name": "Legal Procedures",
+      "description": "Guides users through legal procedures and explains the steps involved.",
+      "keywords": ["legal procedures", "legal process", "legal steps", "legal guidance"],
+      "usage_examples": [
+        "What is the process for filing a lawsuit?",
+        "Explain the steps in the probate process.",
+        "How does the appeals process work?",
+        "What are the requirements for adopting a child?"
+      ]
+    },
+    {
+      "name": "Legal Resources",
+      "description": "Provides access to legal resources such as statutes, regulations, and court opinions.",
+      "keywords": ["legal resources", "statutes", "regulations", "court opinions"],
+      "usage_examples": [
+        "Find the New Mexico statutes on child support.",
+        "Provide the latest court opinions on employment discrimination.",
+        "Where can I find the regulations related to environmental protection?",
+        "What are the legal resources for property law in Albuquerque?"
+      ]
+    }
+  ]
+}
