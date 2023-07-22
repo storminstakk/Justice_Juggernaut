@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('next').JusticeConfig} */
 
-const nextConfig = {
+const justiceConfig = {
   async rewrites() {
     const ret = [
       {
@@ -41,4 +41,4 @@ const nextConfig = {
   output: "standalone",
 };
 
-export default nextConfig;
+export default justiceConfig;
