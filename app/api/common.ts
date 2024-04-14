@@ -1,46 +1,34 @@
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export const OPENAI_URL = "api.openai.com";
+export const HUGGINGFACE_URL = "api.huggingface.co";
 const DEFAULT_PROTOCOL = "https";
 const PROTOCOL = process.env.PROTOCOL ?? DEFAULT_PROTOCOL;
-const BASE_URL = process.env.BASE_URL ?? OPENAI_URL;
+const BASE_URL = process.env.BASE_URL ?? HUGGINGFACE_URL;
 
-export async function requestOpenai(req: NextRequest) {
+export async function handleHuggingFaceRequest(req: NextRequest): Promise<NextResponse> {
   const controller = new AbortController();
   const authValue = req.headers.get("Authorization") ?? "";
-  const openaiPath = `${req.nextUrl.pathname}${req.nextUrl.search}`.replaceAll(
-    "/api/openai/",
-    "",
-  );
+  const huggingFacePath = req.nextUrl.pathname.replace("/api/huggingface/", "");
 
   let baseUrl = BASE_URL;
-
   if (!baseUrl.startsWith("http")) {
     baseUrl = `${PROTOCOL}://${baseUrl}`;
   }
 
-  console.log("[Proxy] ", openaiPath);
-  console.log("[Base Url]", baseUrl);
-
-  if (process.env.OPENAI_ORG_ID) {
-    console.log("[Org ID]", process.env.OPENAI_ORG_ID);
-  }
+  console.log("[Proxy] ", huggingFacePath);
+  console.log("[Base URL]", baseUrl);
 
   const timeoutId = setTimeout(() => {
     controller.abort();
   }, 10 * 60 * 1000);
 
-  const fetchUrl = `${baseUrl}/${openaiPath}`;
+  const fetchUrl = `${baseUrl}/${huggingFacePath}`;
   const fetchOptions: RequestInit = {
+    method: req.method,
     headers: {
       "Content-Type": "application/json",
       Authorization: authValue,
-      ...(process.env.OPENAI_ORG_ID && {
-        "OpenAI-Organization": process.env.OPENAI_ORG_ID,
-      }),
     },
-    cache: "no-store",
-    method: req.method,
     body: req.body,
     signal: controller.signal,
   };
@@ -48,8 +36,8 @@ export async function requestOpenai(req: NextRequest) {
   try {
     const res = await fetch(fetchUrl, fetchOptions);
 
+    // Handle 401 Unauthorized to prevent browser prompt for credentials
     if (res.status === 401) {
-      // to prevent browser prompt for credentials
       const newHeaders = new Headers(res.headers);
       newHeaders.delete("www-authenticate");
       return new Response(res.body, {

@@ -1,8 +1,7 @@
-import { NextRequest } from "next/server";
-import { getServerSideConfig } from "../config/server";
+import { NextRequest, NextResponse } from "next/server";
 import md5 from "spark-md5";
+import { getServerSideConfig } from "../config/server";
 import { ACCESS_CODE_PREFIX } from "../constant";
-import { OPENAI_URL } from "./common";
 
 function getIP(req: NextRequest) {
   let ip = req.ip ?? req.headers.get("x-real-ip");
@@ -15,8 +14,8 @@ function getIP(req: NextRequest) {
   return ip;
 }
 
-function parseApiKey(bearToken: string) {
-  const token = bearToken.trim().replaceAll("Bearer ", "").trim();
+function parseAuthToken(authToken: string) {
+  const token = authToken.trim().replaceAll("Bearer ", "").trim();
   const isOpenAiKey = !token.startsWith(ACCESS_CODE_PREFIX);
 
   return {
@@ -25,42 +24,44 @@ function parseApiKey(bearToken: string) {
   };
 }
 
-export function auth(req: NextRequest) {
-  const authToken = req.headers.get("Authorization") ?? "";
+export function handleAuthRequest(
+  req: NextRequest,
+  params: { path: string[] }
+): NextResponse {
+  const { path } = params;
+  console.log(`[Auth] Handling request for path: ${path}`);
 
-  // check if it is openai api key or user token
-  const { accessCode, apiKey: token } = parseApiKey(authToken);
+  const authToken = req.headers.get("Authorization") ?? "";
+  const { accessCode, apiKey } = parseAuthToken(authToken);
 
   const hashedCode = md5.hash(accessCode ?? "").trim();
-
   const serverConfig = getServerSideConfig();
-  console.log("[Auth] allowed hashed codes: ", [...serverConfig.codes]);
-  console.log("[Auth] got access code:", accessCode);
-  console.log("[Auth] hashed access code:", hashedCode);
+
+  console.log("[Auth] Allowed hashed codes: ", [...serverConfig.codes]);
+  console.log("[Auth] Received access code:", accessCode);
+  console.log("[Auth] Hashed access code:", hashedCode);
   console.log("[User IP] ", getIP(req));
   console.log("[Time] ", new Date().toLocaleString());
 
-  if (serverConfig.needCode && !serverConfig.codes.has(hashedCode) && !token) {
-    return {
-      error: true,
-      msg: !accessCode ? "empty access code" : "wrong access code",
-    };
+  if (serverConfig.needCode && !serverConfig.codes.has(hashedCode) && !apiKey) {
+    return new NextResponse(
+      JSON.stringify({ error: true, msg: !accessCode ? "Empty access code" : "Wrong access code" }),
+      { status: 401 }
+    );
   }
 
-  // if user does not provide an api key, inject system api key
-  if (!token) {
-    const apiKey = serverConfig.apiKey;
-    if (apiKey) {
-      console.log("[Auth] use system api key");
-      req.headers.set("Authorization", `Bearer ${apiKey}`);
+  // Inject system API key if user does not provide one
+  if (!apiKey) {
+    const systemApiKey = serverConfig.apiKey;
+    if (systemApiKey) {
+      console.log("[Auth] Using system API key");
+      req.headers.set("Authorization", `Bearer ${systemApiKey}`);
     } else {
-      console.log("[Auth] admin did not provide an api key");
+      console.log("[Auth] Admin did not provide an API key");
     }
   } else {
-    console.log("[Auth] use user api key");
+    console.log("[Auth] Using user API key");
   }
 
-  return {
-    error: false,
-  };
+  return new NextResponse(JSON.stringify({ error: false }));
 }

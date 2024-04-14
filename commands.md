@@ -1,4 +1,172 @@
 Commands:
+### Document Generation and Analysis:
+1. `/legalDocGenerator` - Generate legal documents tailored to specific cases or legal needs.
+2. `/contractCreator` - Create contracts for various purposes, including employment, services, and partnerships.
+3. `/affidavitBuilder` - Assist in drafting affidavits with customizable templates and prompts.
+4. `/petitionGenerator` - Generate petitions for court actions or legal proceedings.
+5. `/motionAssistant` - Provide guidance and templates for drafting legal motions.
+6. `/letterWriter` - Generate formal letters for legal communications and notices.
+7. `/legalMemoGenerator` - Create legal memoranda summarizing case law and legal arguments.
+8. `/complianceDocumentCreator` - Generate compliance documents for regulatory requirements.
+
+### Legal Research and Reference:
+9. `/lawLibraryAccess` - Provide access to a comprehensive library of statutes, case law, and legal texts.
+10. `/caseLawFinder` - Search for relevant case law based on keywords or legal topics.
+11. `/statutoryInterpretation` - Assist in interpreting statutes and legislative texts.
+12. `/regulatoryGuidance` - Provide guidance on regulatory requirements and compliance.
+13. `/legalDictionaryLookup` - Lookup definitions and explanations of legal terms and concepts.
+14. `/legalTopicExplorer` - Explore legal topics and subfields with curated resources.
+15. `/jurisdictionalAnalysis` - Analyze legal principles specific to different jurisdictions.
+16. `/precedentAnalyzer` - Analyze legal precedents and their implications for specific cases.
+
+### Legal Assistance and Advice:
+17. `/legalAdviceSeeker` - Connect with legal professionals for personalized legal advice.
+18. `/caseEvaluationTool` - Evaluate legal cases and assess strengths and weaknesses.
+19. `/settlementCalculator` - Calculate potential settlement amounts based on legal criteria.
+20. `/litigationStrategyPlanner` - Plan strategies for litigation and dispute resolution.
+21. `/rightsClarifier` - Clarify legal rights and responsibilities in specific contexts.
+22. `/disputeResolutionAdvisor` - Provide guidance on alternative dispute resolution methods.
+23. `/legalProcessNavigator` - Navigate through legal procedures and court processes.
+24. `/legalRiskAssessment` - Assess legal risks associated with business decisions and actions.
+
+### Compliance and Ethics:
+25. `/complianceChecklist` - Generate compliance checklists for specific industries or regulations.
+26. `/ethicsCodeAnalyzer` - Analyze ethical codes and professional conduct standards.
+27. `/privacyPolicyGenerator` - Create privacy policies and data protection statements.
+28. `/anti-discriminationPolicyCreator` - Develop anti-discrimination policies for organizations.
+
+### Contract Management and Review:
+29. `/contractAnalyzer` - Review contracts for legal risks, ambiguities, and compliance issues.
+30. `/contractRenewalReminder` - Send reminders for contract renewals and expiration dates.
+31. `/contractNegotiationHelper` - Provide tips and strategies for contract negotiations.
+32. `/contractAmendmentGenerator` - Generate amendments to existing contracts.
+
+### Compliance Monitoring and Reporting:
+33. `/regulatoryComplianceTracker` - Monitor regulatory changes and compliance requirements.
+34. `/auditPreparationAssistant` - Assist in preparing for legal audits and compliance checks.
+35. `/incidentReportingTool` - Facilitate incident reporting and documentation for legal purposes.
+
+### Intellectual Property and Trademarks:
+36. `/trademarkSearchTool` - Conduct trademark searches and registrations.
+37. `/copyrightRegistrationAssistant` - Assist in registering copyrights for creative works.
+38. `/patentApplicationGenerator` - Generate patent applications and documentation.
+
+### Financial and Tax Legal Support:
+39. `/taxComplianceChecker` - Check tax compliance requirements and deadlines.
+40. `/financialDisclosureAssistant` - Assist in preparing financial disclosures for legal purposes.
+41. `/businessStructureAdvisor` - Provide guidance on business entity formation and structures.
+
+### Litigation and Courtroom Support:
+42. `/litigationTimelineBuilder` - Create timelines for litigation cases and court proceedings.
+43. `/evidenceManagementSystem` - Manage and organize evidence for legal cases.
+44. `/courtAppearancePreparationTool` - Prepare for court appearances and hearings.
+
+### Family Law and Domestic Matters:
+45. `/divorceSettlementPlanner` - Plan settlements for divorce and separation cases.
+46. `/childCustodyEvaluator` - Evaluate factors influencing child custody arrangements.
+47. `/prenuptialAgreementGenerator` - Generate prenuptial agreements for couples.
+
+### Real Estate and Property Law:
+48. `/propertyTitleSearchTool` - Conduct property title searches and investigations.
+49. `/leaseAgreementCreator` - Create lease agreements for residential and commercial properties.
+50. `/landlordTenantDisputeResolver` - Resolve disputes between landlords and tenants.
+
+### Immigration and Citizenship:
+51. `/visaApplicationAdvisor` - Provide guidance on visa applications and immigration processes.
+52. `/citizenshipTestPrepTool` - Prepare for citizenship tests and interviews.
+
+### Personal Injury and Compensation:
+53. `/personalInjuryClaimAssessment` - Assess potential compensation for personal injury claims.
+54. `/workersCompensationCalculator` - Calculate workers' compensation benefits.
+
+### Employment Law:
+55. `/employmentContractGenerator` - Generate employment contracts and offer letters.
+56. `/wrongfulTerminationAdvisor` - Provide guidance on wrongful termination claims.
+
+### Dispute Resolution and Mediation:
+57. `/mediationSessionPlanner` - Plan and schedule mediation sessions for legal disputes.
+58. `/arbitrationClauseCreator` - Create arbitration clauses for contracts and agreements.
+
+### General Legal Tools and Utilities:
+59. `/legalDocumentTranslator` - Translate legal documents between languages.
+60. `/legalFeeCalculator` - Calculate legal fees and costs for legal services.
+61. `/legalCalendarAssistant` - Manage legal deadlines and appointments.
+62. `/e-discoveryTool` - Assist in electronic discovery and document management.
+
+### Accessibility and Inclusivity:
+63. `/accessibleLegalContentReader` - Provide accessible formats for legal documents.
+64. `/languageAccessibilityTool` - Enable multilingual support for legal interactions.
+
+### Miscellaneous Legal Services:
+65. `/willsAndTrustsPlanner` - Plan and draft wills, trusts, and estate plans.
+66. `/consumerRightsAdvisor` - Offer advice on consumer rights and protections.
+67. `/animalRightsConsultant` - Provide legal guidance on animal rights issues.
+68. `/humanRightsComplianceChecker` - Check compliance with human rights standards.
+
+### Bot Management and Interaction:
+69. `/botInitializationGuide` - Guide users on initializing and using the legal bot.
+70. `/userProfileManager` - Manage user profiles and preferences for personalized services.
+71. `/interactionHistoryViewer` - View history of interactions and queries for reference.
+
+### Advanced AI Features:
+72. `/AIComplianceMonitor` - Monitor AI usage and compliance with ethical guidelines.
+73. `/AIAssistedResearchTool` - Use AI to assist in legal research and analysis.
+74. `/AIEthicsConsultant` - Consult AI ethics experts on ethical dilemmas and considerations.
+
+### Security and Privacy:
+75. `/dataProtectionAdvisor` - Provide guidance on data protection and privacy laws.
+76. `/securityAuditPreparer` - Prepare for security audits and compliance assessments.
+
+### Collaboration and Teamwork:
+77. `/legalTeamCollaborationSpace` - Create collaborative spaces
+
+ for legal teams and professionals.
+78. `/caseSharingPlatform` - Share case details and collaborate with other legal professionals.
+
+### Community Engagement and Education:
+79. `/legalEducationProvider` - Offer legal education courses and resources.
+80. `/legalDiscussionForum` - Host forums for legal discussions and knowledge sharing.
+
+### Integration and Customization:
+81. `/APIIntegrationGuide` - Guide developers on integrating with external APIs for legal services.
+82. `/customCommandCreator` - Create custom commands and functionalities for personalized use.
+
+### Voice and Text Interaction:
+83. `/voiceRecognitionAssistant` - Enable voice recognition for hands-free legal interactions.
+84. `/textToVoiceConverter` - Convert text into speech for accessibility and communication.
+
+### Analytics and Insights:
+85. `/legalDataAnalyticsTool` - Analyze legal data to identify trends and patterns.
+86. `/legalPerformanceMetricsAnalyzer` - Measure legal performance and outcomes.
+
+### Crisis and Emergency Response:
+87. `/legalEmergencyResponsePlan` - Develop emergency response plans for legal crises.
+88. `/emergencyContactManager` - Manage emergency contacts and resources for legal emergencies.
+
+### Client Relations and Support:
+89. `/clientFeedbackCollector` - Collect feedback and improve legal services based on client input.
+90. `/clientSatisfactionSurveyor` - Conduct surveys to assess client satisfaction and needs.
+
+### Multifactor Authentication and Security:
+91. `/multiFactorAuthenticator` - Implement multi-factor authentication for secure access.
+92. `/userPrivacySettingsManager` - Manage user privacy settings and data protection preferences.
+
+### Industry-Specific Legal Services:
+93. `/healthcareComplianceAdvisor` - Provide guidance on healthcare compliance and regulations.
+94. `/financeIndustryRegulatoryCompliance` - Assist in regulatory compliance for financial institutions.
+
+### Legal Marketing and Outreach:
+95. `/legalBrandIdentityCreator` - Create brand identity and marketing materials for legal services.
+96. `/socialMediaEngagementManager` - Manage social media presence and engagement for legal firms.
+
+### Compliance Certifications and Assessments:
+97. `/ISOComplianceChecker` - Check compliance with ISO standards and certifications.
+98. `/legalAuditPreparationAssistant` - Prepare for legal audits and compliance assessments.
+99. `/complianceCertificationAdvisor` - Provide guidance on obtaining compliance certifications.
+
+### User Interface and Experience:
+100. `/legalBotUserGuide` - Offer a comprehensive guide on using the legal bot efficiently and effectively.
+
 1. `/article` - Generate an informative article on a specific family law topic.
 2. `/caseBrief` - Generate a brief summary of a legal case relevant to family law.
 3. `/studyAid` - Create a study aid or flashcards for a specific legal topic.

@@ -1,3 +1,14 @@
+huggingface
+transformers
+legal-doc-processing
+lawLib
+BeautifulSoup
+scrapy 
+docassemble
+docassemble.webapp
+Pydantic 
+law
+justice
 @fortaine/fetch-event-source==3.0.6
 @hello-pangea/dnd==16.2.0
 @svgr/webpack==6.5.1

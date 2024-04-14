@@ -2,59 +2,63 @@ import { useEffect, useState } from "react";
 import { showToast } from "./components/ui-lib";
 import Locale from "./locales";
 
-export function trimTopic(topic: string) {
-  return topic.replace(/[，。！？”“"、,.!?]*$/, "");
+export function trimTopic(topic: string): string {
+  // Trim trailing punctuation, whitespace, and special characters using Unicode properties
+  return topic.replace(/[\p{P}\p{S}\s]*$/gu, "");
 }
 
-export async function copyToClipboard(text: string) {
+export async function copyToClipboard(text: string): Promise<void> {
   try {
     await navigator.clipboard.writeText(text);
     showToast(Locale.Copy.Success);
   } catch (error) {
-    const textArea = document.createElement("textarea");
-    textArea.value = text;
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
     try {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
       document.execCommand("copy");
+      document.body.removeChild(textArea);
       showToast(Locale.Copy.Success);
     } catch (error) {
       showToast(Locale.Copy.Failed);
     }
-    document.body.removeChild(textArea);
   }
 }
 
-export function downloadAs(text: string, filename: string) {
-  const element = document.createElement("a");
-  element.setAttribute(
-    "href",
-    "data:text/plain;charset=utf-8," + encodeURIComponent(text),
-  );
-  element.setAttribute("download", filename);
+export function downloadAs(text: string, filename: string, mimeType = "text/plain;charset=utf-8"): void {
+  const blob = new Blob([text], { type: mimeType });
+  const url = URL.createObjectURL(blob);
 
-  element.style.display = "none";
-  document.body.appendChild(element);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
 
-  element.click();
+  anchor.style.display = "none";
+  document.body.appendChild(anchor);
 
-  document.body.removeChild(element);
+  anchor.click();
+
+  document.body.removeChild(anchor);
+  URL.revokeObjectURL(url);
 }
 
-export function readFromFile() {
-  return new Promise<string>((res, rej) => {
+export function readFromFile(): Promise<string | null> {
+  return new Promise((resolve, reject) => {
     const fileInput = document.createElement("input");
     fileInput.type = "file";
-    fileInput.accept = "application/json";
+    fileInput.accept = ".txt, .json, .csv";
 
-    fileInput.onchange = (event: any) => {
-      const file = event.target.files[0];
+    fileInput.onchange = (event) => {
+      const file = (event.target as HTMLInputElement)?.files?.[0];
+      if (!file) {
+        reject(new Error("No file selected"));
+        return;
+      }
+
       const fileReader = new FileReader();
-      fileReader.onload = (e: any) => {
-        res(e.target.result);
-      };
-      fileReader.onerror = (e) => rej(e);
+      fileReader.onload = (e) => resolve(e.target?.result as string);
+      fileReader.onerror = (e) => reject(e);
       fileReader.readAsText(file);
     };
 
@@ -62,61 +66,68 @@ export function readFromFile() {
   });
 }
 
-export function isIOS() {
+export function isIOS(): boolean {
   const userAgent = navigator.userAgent.toLowerCase();
   return /iphone|ipad|ipod/.test(userAgent);
 }
 
-export function useWindowSize() {
+export function useWindowSize(): { width: number; height: number } {
   const [size, setSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
 
   useEffect(() => {
-    const onResize = () => {
+    const handleResize = () => {
       setSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
     };
 
-    window.addEventListener("resize", onResize);
+    const debouncedResizeHandler = debounce(handleResize, 200); // Example debounce function
+
+    window.addEventListener("resize", debouncedResizeHandler);
 
     return () => {
-      window.removeEventListener("resize", onResize);
+      window.removeEventListener("resize", debouncedResizeHandler);
     };
   }, []);
 
   return size;
 }
 
-export const MOBILE_MAX_WIDTH = 600;
-export function useMobileScreen() {
-  const { width } = useWindowSize();
-
-  return width <= MOBILE_MAX_WIDTH;
+export function isFirefox(): boolean {
+  return typeof InstallTrigger !== "undefined";
 }
 
-export function isFirefox() {
-  return (
-    typeof navigator !== "undefined" && /firefox/i.test(navigator.userAgent)
+export function autoGrowTextArea(dom: HTMLTextAreaElement): number {
+  const measureDom = getOrCreateMeasureDom("__measure");
+  measureDom.style.width = getDomContentWidth(dom) + "px";
+  measureDom.innerText = dom.value || "1";
+
+  const height = parseFloat(window.getComputedStyle(measureDom).height);
+  const singleLineHeight = parseFloat(
+    window.getComputedStyle(getOrCreateMeasureDom("__single_measure")).height
   );
+
+  return Math.round(height / singleLineHeight);
 }
 
-export function selectOrCopy(el: HTMLElement, content: string) {
-  const currentSelection = window.getSelection();
-
-  if (currentSelection?.type === "Range") {
-    return false;
-  }
-
-  copyToClipboard(content);
-
-  return true;
+export function getCSSVar(varName: string, defaultValue = ""): string {
+  return getComputedStyle(document.body).getPropertyValue(varName).trim() || defaultValue;
 }
 
-function getDomContentWidth(dom: HTMLElement) {
+function debounce(callback: () => void, delay: number): () => void {
+  let timeoutId: ReturnType<typeof setTimeout>;
+
+  return () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(callback, delay);
+  };
+}
+
+function getDomContentWidth(dom: HTMLElement): number {
   const style = window.getComputedStyle(dom);
   const paddingWidth =
     parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
@@ -124,8 +135,8 @@ function getDomContentWidth(dom: HTMLElement) {
   return width;
 }
 
-function getOrCreateMeasureDom(id: string, init?: (dom: HTMLElement) => void) {
-  let dom = document.getElementById(id);
+function getOrCreateMeasureDom(id: string, init?: (dom: HTMLElement) => void): HTMLElement {
+  let dom = document.getElementById(id) as HTMLElement;
 
   if (!dom) {
     dom = document.createElement("span");
@@ -140,30 +151,5 @@ function getOrCreateMeasureDom(id: string, init?: (dom: HTMLElement) => void) {
     init?.(dom);
   }
 
-  return dom!;
-}
-
-export function autoGrowTextArea(dom: HTMLTextAreaElement) {
-  const measureDom = getOrCreateMeasureDom("__measure");
-  const singleLineDom = getOrCreateMeasureDom("__single_measure", (dom) => {
-    dom.innerText = "TEXT_FOR_MEASURE";
-  });
-
-  const width = getDomContentWidth(dom);
-  measureDom.style.width = width + "px";
-  measureDom.innerText = dom.value !== "" ? dom.value : "1";
-  const endWithEmptyLine = dom.value.endsWith("\n");
-  const height = parseFloat(window.getComputedStyle(measureDom).height);
-  const singleLineHeight = parseFloat(
-    window.getComputedStyle(singleLineDom).height,
-  );
-
-  const rows =
-    Math.round(height / singleLineHeight) + (endWithEmptyLine ? 1 : 0);
-
-  return rows;
-}
-
-export function getCSSVar(varName: string) {
-  return getComputedStyle(document.body).getPropertyValue(varName).trim();
+  return dom;
 }

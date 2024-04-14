@@ -1,6 +1,6 @@
 import { ACCESS_CODE_PREFIX } from "../constant";
 import { ChatMessage, ModelConfig, ModelType, useAccessStore } from "../store";
-import { ChatGPTApi } from "./platforms/openai";
+import { ChatGPTApi } from "./platforms/huggingface";
 
 export const ROLES = ["system", "user", "assistant"] as const;
 export type MessageRole = (typeof ROLES)[number];
@@ -87,7 +87,7 @@ export class ClientApi {
   public llm: LLMApi;
 
   constructor() {
-    this.llm = new ChatGPTApi();
+    this.llm = new HuggingfaceApi();
   }
 
   config() {}
@@ -167,7 +167,7 @@ export function getHeaders() {
  * This module exports several classes and interfaces that are used to interact with OpenAI's GPT API.
  * The `ClientApi` class is the main entry point for using the API, and it provides methods for interacting with the GPT API.
  * The `LLMApi` class is an abstract class that defines the interface for interacting with the GPT API.
- * The `ChatGPTApi` class is a concrete implementation of the `LLMApi` class that provides methods for chatting with the GPT API.
+ * The `HuggingfaceApi` class is a concrete implementation of the `LLMApi` class that provides methods for chatting with the GPT API.
  * The `RequestMessage` interface defines the structure of a message that can be sent to the GPT API.
  * The `LLMConfig` interface defines the configuration options that can be passed to the GPT API.
  * The `ChatOptions` interface defines the options that can be passed to the `chat` method of the `LLMApi` class.
